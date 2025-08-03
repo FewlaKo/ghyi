@@ -19,7 +19,7 @@ engines:
   variants:
     dir: "./engines"
     name: "fairy-stockfish_x86-64-bmi2"
-    ponder: false
+    ponder: true
     silence_stderr: false
     move_overhead_multiplier: 22.0
     uci_options:
@@ -142,7 +142,7 @@ opening_books:
 
 online_moves:
   opening_explorer:
-    enabled: true
+    enabled: false
     priority: 300
  #   player: Username
     only_without_book: false
@@ -156,7 +156,7 @@ online_moves:
     # max_depth: 20
 
   lichess_cloud:
-    enabled: true
+    enabled: false
     priority: 200
     only_without_book: true
     min_eval_depth: 20
@@ -166,7 +166,7 @@ online_moves:
     # max_depth: 30
 
   chessdb:
-    enabled: true
+    enabled: false
     priority: 250
     only_without_book: false
     min_candidates: 5
